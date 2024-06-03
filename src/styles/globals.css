@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+:root {
+    --font-mont: 'Montserrat', sans-serif;
+}
+
+.font-mont {
+    font-family: var(--font-mont);
+}
