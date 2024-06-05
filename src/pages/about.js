@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
@@ -5,6 +6,9 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import profileImage from "../../public/images/profile/developer-pic-2.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const AnimatedNumber = ({ value }) => {
   const ref = useRef(null);
@@ -106,6 +110,9 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
